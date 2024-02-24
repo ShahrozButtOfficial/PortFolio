@@ -1,0 +1,145 @@
+/* grooming.css */
+/* Hamburger menu styling */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color:#3f0c7d; /* Adjusted color for better visibility */
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #840bb8; /* Adjusted color for better visibility */
+    text-decoration: none;
+}
+
+.menu .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.menu .nav-links li {
+    margin: 0 15px;
+}
+
+.menu .nav-links a {
+    text-decoration: none;
+    color:  #000000; /* Adjusted color for better visibility */
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.menu .nav-links a:hover {
+    color:  #cf0ced; /* Adjusted hover color for better visibility */
+}
+
+/* Increase the size of the hamburger icon */
+.bar {
+    width: 40px;
+    height: 5px;
+    margin: 8px 0;
+}
+
+/* Media query for responsive design */
+@media only screen and (max-width: 768px) {
+    .menu .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .menu .nav-links.show {
+        display: flex;
+    }
+
+    /* Adjusted styling for smaller screens */
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu .nav-links {
+        width: 100%;
+        text-align: center;
+        background-color: #3f0c7d; /* Adjusted background color for mobile */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .menu .nav-links a {
+        color: #ffffff; /* Adjusted text color for mobile */
+        padding: 15px;
+        display: block;
+    }
+
+    .menu .nav-links a:hover {
+        background-color: #654484; /* Adjusted hover background color for mobile */
+    }
+}
+
+/* General styling for improved aesthetics */
+body {
+    background-color: #f9f9f9;
+}
+
+.container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for highlight sections */
+.highlight-section {
+    background-color: #ffffff;
+}
+
+.highlight-section h2.section-title {
+    color: #3f0c7d;
+    margin-bottom: 20px;
+}
+
+.highlight-section p.education-info {
+    color: #000000;
+}
+
+/* Styling for skills list */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color:#3f0c7d;
+    color: #ffffff;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+/* Add more specific styling as needed */
