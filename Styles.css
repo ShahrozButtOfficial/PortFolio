@@ -1,0 +1,193 @@
+/* Update or add these styles to your existing styles.css */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Lighter background color */
+    color: #343a40; /* Dark text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #3f0c7d; /* Primary blue color */
+    color: #570c91;
+    padding: 20px 0;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #dae0e5; /* Lighter color on hover */
+}
+
+/* Hero section styles */
+.hero-container {
+    height: 300px; /* Increased height for a better visual impact */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.typed-intro {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #dae0e5; /* Lighter color for better readability */
+}
+
+/* Section styles */
+section {
+    margin: 60px 0;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h2 {
+    color:#3f0c7d; /* Primary blue color for section headings */
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 2.5em;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color:#3f0c7d; /* Primary blue color for underline */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Project styles */
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px; /* Slightly increased border radius */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa; /* Lighter background color */
+    color:#000000; /* Dark text color */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#3f0c7d; /* Primary blue color for buttons */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #cf0ced; /* Darker blue color on hover */
+}
+
+/* Contact section styles */
+#contact a {
+    position: relative;
+    color:#3f0c7d; /* Primary blue color for contact links */
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color:#3f0c7d; /* Primary blue color for underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #cf0ced; /* Darker blue color on hover */
+}
+
+#contact a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#contact a i {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+#contact a:hover i {
+    transform: scale(1.2);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color:#3f0c7d; /* Primary blue color for footer */
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
