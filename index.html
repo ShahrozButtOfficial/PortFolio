@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Shahroz's Portfolio</title>
+    <link rel="stylesheet" href="grooming.css">
+</head>
+
+<body>
+
+     <!-- Updated header with hamburger menu -->
+     <header>
+        <div class="container">
+            <div class="menu-toggle" id="menuToggle">
+                
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <nav class="menu">
+                  <!-- Add your logo here -->
+                  <div class="logo">
+                    <img src="./logo_transparent.png" alt="Your Logo" width="300" height="300" >                   
+                </div>
+            
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- Add new menu items for the additional sections -->
+                </ul>
+            </nav>
+            
+            <div class="hero-content">
+                <p class="typed-intro"></p>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to My Professional Portfolio</h2>
+            <p>Embark on a journey through my skills in technology and creativity.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a dedicated BSCS graduate with expertise in C++ and web development. Also, I am a social media influencer and star.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1 goes here. Showcase your skills and achievements.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2 goes here. Highlight your contributions and outcomes.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+      <!-- New Skills Section -->
+      <section id="skills" class="highlight-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Database Management</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+     <!-- New Education Section -->
+     <section id="education" class="highlight-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="education-info">Bachelor of Science in Computer Science<br>
+                University of Technology, City, Country<br>
+                Graduated: May 2022</p>
+        </div>
+    </section>
+
+
+    <!-- New Experience Section -->
+    <section id="experience" class="highlight-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="education-info">Web Developer Intern<br>
+                shahroz_butt_official Tech Solutions, Lahore, Pakistan<br>
+                June 2021 - August 2021</p>
+        </div>
+    </section>
+
+    <!-- New Certificates Section -->
+    <section id="certificates" class="highlight-section">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <ul>
+                <li class="education-info">Web Development Certificate - Udemy</li>
+                <li class="education-info">React.js Fundamentals - Coursera</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- New Blog Section -->
+    <section id="blog"  class="highlight-section">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <p class="education-info">Check out my latest blog posts on web development and technology.</p>
+            <a href="#" class="btn">Read Blog</a>
+        </div>
+    </section>
+
+    <!-- New Testimonials Section -->
+    <section id="testimonials"  class="highlight-section">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <p class="education-info">"Shahroz is an excellent developer with a keen eye for detail. Highly recommended!" - John Doe, CEO</p>
+        </div>
+    </section>
+
+    <!-- New Achievements Section -->
+    <section id="achievements"  class="highlight-section">
+        <div class="container">
+            <h2  class="section-title">Achievements</h2>
+            <ul>
+                <li  class="education-info">Outstanding Student Award - Computer Science Department</li>
+                <li  class="education-info">1st Place in Web Development Hackathon</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- New Hobbies/Interests Section -->
+    <section id="hobbies"  class="highlight-section">
+        <div class="container">
+            <h2  class="section-title">Hobbies & Interests</h2>
+            <p class="education-info">In my free time, I enjoy coding, reading, and hiking. Passionate about exploring new technologies.</p>
+        </div>
+    </section>
+
+    <!-- New Open Source Contributions Section -->
+    <section id="opensource"  class="highlight-section">
+        <div class="container">
+            <h2 class="section-title">Open Source Contributions</h2>
+            <p class="education-info">Contributed to various open-source projects on GitHub. Check out my GitHub profile for details.</p>
+            <a href="https://github.com/ShahrozButtOfficial" class="btn">GitHub Profile</a>
+        </div>
+    </section>
+
+    <!-- New Code Samples Section -->
+    <section id="codesamples"  class="highlight-section">
+        <div class="container">
+            <h2 class="section-title">Code Samples</h2>
+            <p class="education-info">Explore some of my coding projects and snippets on GitHub. Feel free to fork and contribute!</p>
+            <a href="https://github.com/ShahrozButtOfficial" class="btn">GitHub Repositories</a>
+        </div>
+        </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email me at: <a href="mailto:bshahroz48@gmail.com"><i class="fas fa-envelope"></i> bshahroz48@gmail.com</a></p>
+            <p>Connect on Instagram: <a href="https://www.instagram.com/shahroz_butt_official/" target="_blank"><i class="fab fa-instagram"></i> shahroz_butt_official</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shahroz Butt | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
